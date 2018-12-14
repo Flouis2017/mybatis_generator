@@ -14,7 +14,7 @@
 
 		<!-- 数据库链接URL、用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql://localhost:3306/test_npjt?characterEncoding=utf8&amp;useSSL=false"
+						connectionURL="jdbc:mysql://localhost:3306/permission_management?characterEncoding=utf8&amp;useSSL=false"
 						userId="root" password="root" />
 
 		<javaTypeResolver>
@@ -38,7 +38,7 @@
 		</javaClientGenerator>
 
 		<!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
-		<table tableName="test_user" domainObjectName="TestUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="aaa" domainObjectName="Aaa" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 	</context>
 
 </generatorConfiguration>
