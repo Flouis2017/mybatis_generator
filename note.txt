@@ -1,3 +1,11 @@
+准备工作：
+获取所有数据表名：
+SELECT table_name FROM information_schema.tables
+WHERE table_schema='<数据库名>' AND table_type='base table';
+
+运行Main.java中的main方法,获取数据表映射配置，以便之后直接复制到generator-config.xml中使用
+（当然这一步骤手动修改也行）
+
 MyBatis Generator使用：
 在IntelliJ中使用Maven插件运行MyBatis Generator：
 https://www.cnblogs.com/yjmyzz/p/4210554.html
