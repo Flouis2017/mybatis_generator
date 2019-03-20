@@ -6,11 +6,11 @@ WHERE table_schema='<数据库名>' AND table_type='base table';
 运行Main.java中的main方法,获取数据表映射配置，以便之后直接复制到generator-config.xml中使用
 （当然这一步骤手动修改也行）
 
-MyBatis Generator使用：
+MyBatis Generator使用（这里是使用命令行方式）：
 在IntelliJ中使用Maven插件运行MyBatis Generator：
 https://www.cnblogs.com/yjmyzz/p/4210554.html
 
-在命令提示符下运行MyBatis Generator：
+在命令行下运行MyBatis Generator：
 https://blog.csdn.net/tolcf/article/details/50835165
 （java -jar mybatis-generator-core-1.3.5.jar -configfile generator-config.xml -overwrite）
 
