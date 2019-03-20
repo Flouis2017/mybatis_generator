@@ -14,7 +14,7 @@
 
 		<!-- 数据库链接URL、用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql://localhost:3306/permission_management?characterEncoding=utf8&amp;useSSL=false"
+						connectionURL="jdbc:mysql://localhost:3306/shack_lab?characterEncoding=utf8&amp;useSSL=false"
 						userId="root" password="root" />
 
 		<javaTypeResolver>
@@ -38,25 +38,7 @@
 		</javaClientGenerator>
 
 		<!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
-		<table tableName="sys_acl" domainObjectName="SysAcl"
-			   enableCountByExample="false" enableUpdateByExample="false"
-			   enableDeleteByExample="false" enableSelectByExample="false"
-			   selectByExampleQueryId="false">
-		</table>
-
-		<table tableName="sys_acl_module" domainObjectName="SysAclModule"
-			   enableCountByExample="false" enableUpdateByExample="false"
-			   enableDeleteByExample="false" enableSelectByExample="false"
-			   selectByExampleQueryId="false">
-		</table>
-
-		<table tableName="sys_dept" domainObjectName="SysDept"
-			   enableCountByExample="false" enableUpdateByExample="false"
-			   enableDeleteByExample="false" enableSelectByExample="false"
-			   selectByExampleQueryId="false">
-		</table>
-
-		<table tableName="sys_log" domainObjectName="SysLog"
+		<table tableName="sys_resource" domainObjectName="SysResource"
 			   enableCountByExample="false" enableUpdateByExample="false"
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
@@ -68,7 +50,7 @@
 			   selectByExampleQueryId="false">
 		</table>
 
-		<table tableName="sys_role_acl" domainObjectName="SysRoleAcl"
+		<table tableName="sys_role_resource" domainObjectName="SysRoleResource"
 			   enableCountByExample="false" enableUpdateByExample="false"
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
@@ -85,8 +67,6 @@
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
 		</table>
-
-
 	</context>
 
 </generatorConfiguration>

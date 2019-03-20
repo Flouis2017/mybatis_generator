@@ -1,6 +1,6 @@
 准备工作：
-获取所有数据表名：
-SELECT table_name FROM information_schema.tables
+获取所有数据表名，将查询结果作为Main.java中的str该变量值：
+SELECT GROUP_CONCAT(table_name) AS tables_name FROM information_schema.tables
 WHERE table_schema='<数据库名>' AND table_type='base table';
 
 运行Main.java中的main方法,获取数据表映射配置，以便之后直接复制到generator-config.xml中使用
@@ -16,3 +16,4 @@ https://blog.csdn.net/tolcf/article/details/50835165
 
 MyBatis Generator配置文件详解：
 https://blog.csdn.net/testcs_dn/article/details/77881776
+[注意]：配置文件中数据库地址一定要记得改
